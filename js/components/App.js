@@ -1,9 +1,14 @@
 import React from 'react';
+import TodoList from './TodoList';
 
-class App extends React.Component {
-  render() {
-    return <div>Hello there!</div>;
-  }
-}
+const App = () => (
+  <TodoList data={data} />
+)
+
+
+var data = [
+  {id: 1, text: "ciccio", completed: false},
+  {id: 2, text: "bello", completed: false}
+];
 
 export default App;
