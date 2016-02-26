@@ -16,7 +16,7 @@ export default class ItemForm extends Component {
     if (!text) {
       return;
     }
-    this.props.onTextSubmit({text: text});
+    this.props.onTextSubmit(text);
     this.setState({text: ""});
   }
   render(){
